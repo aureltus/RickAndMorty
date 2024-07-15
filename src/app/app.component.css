@@ -1,0 +1,54 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  background-color: #be8c15;
+  border: none;
+  padding: 10px 20px;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.card {
+  background-color: #e53b88;
+  border: 2px solid #2b1124;
+  box-shadow: 0 4px 8px 0 rgba(187, 84, 84, 0.2);
+  max-width: 400px;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h2 {
+  color: #fff;
+}
+
+.card p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.card .details {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 16px;
+}

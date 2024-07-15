@@ -1,3 +1,13 @@
-<h1>Hello Rick</h1>
+<h1>Hello</h1>
 <h2>{{ title }}</h2>
-<button (click)="getCharacter()">Click me !</button>
+<button (click)="drawCharacter()" [disabled]="!canDraw">
+  Draw a Character
+</button>
+<div *ngIf="character" class="card">
+  <h2>{{ character.name }}</h2>
+  <img [src]="character.image" alt="{{ character.name }}" />
+  <div class="details">
+    Status: {{ character.status }} | Species: {{ character.species }} |
+    Character ID: {{ character.id }}
+  </div>
+</div>
